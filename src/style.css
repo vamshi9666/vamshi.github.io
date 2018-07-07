@@ -1,8 +1,19 @@
 .pro-pic{
   flex: 1;
+  justify-content: space-between;
   width: 200px;
   height: 200px;
   padding: 50px;
+}
+.links-con{
+  flex: 0.5;
+  width:90vh;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+.link{
+  margin-left: auto;
+  margin-right: auto;
 }
 .whole{
   display: flex;
