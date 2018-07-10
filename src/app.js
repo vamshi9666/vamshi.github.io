@@ -18,7 +18,8 @@ const profile = ()=>(
 
 const contact = ()=>(
   <div className="whole">
-
+    <h5> This part of website will be updated soon with meaning-full content</h5>
+    
   </div>
 )
 const projects = ()=>(
