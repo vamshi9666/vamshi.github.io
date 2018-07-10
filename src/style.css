@@ -12,6 +12,16 @@
   justify-content: space-around;
   flex-direction: row;
 }
+.project{
+  display: flex;
+  flex-direction: row;
+}
+.project-head{
+  flex: 1;
+}
+.disc-con{
+  flex: 1
+}
 .link{
   flex:1;
 }

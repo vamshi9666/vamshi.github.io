@@ -1,7 +1,10 @@
 import React , {Component }from 'react';
+import http from 'http'
 import { Route, Switch, Link } from 'react-router-dom'
 import './style.css'
 
+//components
+import Project from './components/project'
 const profile = ()=>(
   <div className="whole">
       <div className="head1">
@@ -19,18 +22,43 @@ const profile = ()=>(
 const contact = ()=>(
   <div className="whole">
     <h5> This part of website will be updated soon with meaning-full content</h5>
-    
+
   </div>
 )
-const projects = ()=>(
-    <div className="whole">
-      <ul>
-        <h5> This part of website will be updated soon with meaning-full content</h5>
+class projects extends Component {
+  constructor(){
+    super();
+    this.state = {
+    }
+  }
+  componentWillMount(){
+     fetch('https://api.github.com/users/vamshi9666/repos')
+        .then(response =>response.json())
+        .then(jsonResponse=>{
+          this.setstate(jsonResponse)
+          console.log(this.state);
+        })
+        .catch(err=>{
+          console.log(err);
+        })
+  }
+  render(){
+    return (
+      <div className="">projects</div>
+    );
+  }
+}
 
-      </ul>
-    </div>
-);
 class App extends Component{
+    constructor(props){
+      super(props);
+      this.state = {
+        loading : false
+      }
+    }
+    // componentWillMount(){
+    //
+    // }
     render(){
         return(
             <div className="whole">
@@ -45,7 +73,7 @@ class App extends Component{
                   </Link>
                   <Link  to='/projects'>
                     <button className="cus-btn">Projects</button>
-                  </Link>
+                  </Link>{this.props.logo}
                   <Link className="btn" to='/contact'>
                     <button className="btn cus-btn">Hire me</button>
                   </Link>
