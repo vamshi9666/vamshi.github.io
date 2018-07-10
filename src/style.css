@@ -8,12 +8,17 @@
 .links-con{
   flex: 0.5;
   width:90vh;
-  padding-left: 40%;
-  padding-right: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 .link{
-  margin-left: auto;
-  margin-right: auto;
+  flex:1;
+}
+.cus-btn{
+  width: 100px;
+  height: 40px;
+  white-space: nowrap;
 }
 .whole{
   display: flex;
@@ -22,7 +27,7 @@
    margin-left: 5%;
    align-items: center;
    font-family: 'IBM Plex Mono', monospace;
-   height: 100vh
+   height: 90vh
 }
 .tag-line{
   padding-top: 5px;

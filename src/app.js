@@ -16,10 +16,16 @@ const profile = ()=>(
   </div>
 );
 
+const contact = ()=>(
+  <div className="whole">
+
+  </div>
+)
 const projects = ()=>(
-    <div>
+    <div className="whole">
       <ul>
-        Projects list
+        <h5> This part of website will be updated soon with meaning-full content</h5>
+
       </ul>
     </div>
 );
@@ -27,16 +33,22 @@ class App extends Component{
     render(){
         return(
             <div className="whole">
-              <div className="links-con">
-                  <Link className="link" to='/'>
-                    <button>Profile</button>
-                  </Link>
-                  <Link className="link" to='/projects'><button>Projects</button></Link>
-              </div>
               <Switch>
                 <Route  path='/projects' component={projects}/>
                 <Route exact path='/' component={profile}/>
+                <Route path='/contact' component={contact}></Route>
               </Switch>
+              <div className="links-con">
+                  <Link  to='/'>
+                    <button className="cus-btn">Profile</button>
+                  </Link>
+                  <Link  to='/projects'>
+                    <button className="cus-btn">Projects</button>
+                  </Link>
+                  <Link className="btn" to='/contact'>
+                    <button className="btn cus-btn">Hire me</button>
+                  </Link>
+              </div>
             </div>
           );
     }
