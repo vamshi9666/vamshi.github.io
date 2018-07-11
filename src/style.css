@@ -37,13 +37,21 @@
    margin-left: 5%;
    align-items: center;
    font-family: 'IBM Plex Mono', monospace;
-   height: 90vh
+   height:  80vh;
+   overflow: auto;
 }
 .tag-line{
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.projects-con{
+  height: 80vh;
+  width: 60%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
 }
 
 .ent{
@@ -54,6 +62,16 @@
 .title-icon{
   width: 15%;
   height: 20%
+}
+.whole-con{
+    display: flex;
+    flex-direction: column;
+     margin-right: 5%;
+     margin-left: 5%;
+     align-items: center;
+     font-family: 'IBM Plex Mono', monospace;
+     max-height:  90vh;
+     overflow: auto;
 }
 
 #app{
