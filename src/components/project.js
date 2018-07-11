@@ -12,7 +12,7 @@ class Project extends Component {
     return (
       <div className="project">
         <div className="project-head">
-          <img src="{this.props.logo}" alt=""/>
+          <img src={this.props.logo} alt=""/>
           <h3>{this.props.name}</h3>
         </div>
         <div className="disc-con">

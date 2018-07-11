@@ -29,14 +29,16 @@ class projects extends Component {
   constructor(){
     super();
     this.state = {
+      data:[]
     }
+    this.componentWillMount = this.componentWillMount.bind(this)
   }
   componentWillMount(){
      fetch('https://api.github.com/users/vamshi9666/repos')
         .then(response =>response.json())
         .then(jsonResponse=>{
-          this.setstate(jsonResponse)
-          console.log(this.state);
+          console.log(jsonResponse)
+          this.setState({data:jsonResponse})
         })
         .catch(err=>{
           console.log(err);
@@ -44,7 +46,9 @@ class projects extends Component {
   }
   render(){
     return (
-      <div className="">projects</div>
+      <div className="" >
+        {this.state.data.toString()}
+      </div>
     );
   }
 }
@@ -56,6 +60,7 @@ class App extends Component{
         loading : false
       }
     }
+
     // componentWillMount(){
     //
     // }

@@ -13,14 +13,14 @@
   flex-direction: row;
 }
 .project{
-  display: flex;
-  flex-direction: row;
+  display: block;
+  height: 50px;
+  width: 250px
 }
 .project-head{
-  flex: 1;
+  max-height: 100%
 }
 .disc-con{
-  flex: 1
 }
 .link{
   flex:1;
