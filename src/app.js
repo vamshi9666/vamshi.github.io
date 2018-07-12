@@ -43,15 +43,17 @@ class projects extends Component {
       .catch(err=>{ console.log(err); }) }
   render(){
     return (
-      <div className="projects-con">
+      <ol className="projects-con">
         {
           this.state.data.map(project=>{
             return (
-              <Project name={project.name}></Project>
+              <li className="each-pro">
+                <Project name={project.name}></Project>
+              </li>
             );
           })
         }
-      </div>
+      </ol>
     );
   }
 }
@@ -69,23 +71,26 @@ class App extends Component{
     // }
     render(){
         return(
-            <div className="whole-con">
-              <Switch>
-                <Route  path='/projects' component={projects}/>
-                <Route exact path='/' component={profile}/>
-                <Route path='/contact' component={contact}></Route>
-              </Switch>
-              <div className="links-con">
+            <div className="">
+              <nav className="navbar navbar-inverse">
+                <div className="links-con">
                   <Link  to='/'>
                     <button className="cus-btn">Profile</button>
                   </Link>
                   <Link  to='/projects'>
                     <button className="cus-btn">Projects</button>
                   </Link>{this.props.logo}
-                  <Link className="btn" to='/contact'>
-                    <button className="btn cus-btn">Hire me</button>
+                  <Link className="cus-btn" to='/contact'>
+                    <button className=" cus-btn">Hire me</button>
                   </Link>
               </div>
+            </nav>
+              <Switch>
+                <Route  path='/projects' component={projects}/>
+                <Route exact path='/' component={profile}/>
+                <Route path='/contact' component={contact}></Route>
+              </Switch>
+
             </div>
           );
     }
