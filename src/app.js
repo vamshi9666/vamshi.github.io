@@ -8,8 +8,12 @@ import Project from './components/project'
 const profile = ()=>(
   <div className="whole">
   <div className="head1">
-    <img className="pro-pic" src="https://avatars1.githubusercontent.com/u/28837336?s=460&v=4"></img>
-    <h2 className="">Vamshi Krishna Nimmakuri</h2>
+    <div className="img-con">
+      <img className="pro-pic" src="https://avatars1.githubusercontent.com/u/28837336?s=460&v=4"></img>
+    </div>
+    <div className="img-con">
+      <h2 className="">Vamshi Krishna Nimmakuri</h2>
+    </div>
   </div>
   <div className="head2">
     <p className="tag-line"> I used to say JavaSCript everywhere.</p>

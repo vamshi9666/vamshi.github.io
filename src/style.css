@@ -1,8 +1,9 @@
 .pro-pic{
   flex: 1;
-  justify-content: space-between;
-  width: 200px;
-  height: 200px;
+  max-width: 50vh;
+  max-height: 60vh;
+    width: 200px;
+  height: 50vh;
   padding: 50px;
 }
 .links-con{
@@ -51,10 +52,11 @@
 .whole{
   display: flex;
   flex-direction: column;
-   margin-right: 5%;
-   margin-left: 5%;
+   /* margin-right: 5%;
+   margin-left: 5%; */
    font-family: 'IBM Plex Mono', monospace;
    height:  100vh;
+   justify-content: center;
    overflow: hidden;
 }
 .tag-line{
@@ -86,15 +88,23 @@
      font-family: 'IBM Plex Mono', monospace;
      max-height:  90vh;
      overflow: auto;
+     text-align: center;
 }
 
+.img-con{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 #app{
   padding: 0;
   margin: 0;
   height: 100vh;
 }
 .head1{
-  flex: 1
+  flex: 1;
+  justify-content: center;
+
 }
 .head2{
   flex: 1
