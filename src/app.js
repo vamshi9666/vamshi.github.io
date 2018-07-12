@@ -72,7 +72,7 @@ class App extends Component{
     render(){
         return(
             <div className="">
-              <nav className="navbar navbar-inverse">
+              <nav className="navbar nav-container navbar-inverse">
                 <div className="links-con">
                   <Link  to='/'>
                     <button className="cus-btn">Profile</button>
@@ -85,7 +85,7 @@ class App extends Component{
                   </Link>
               </div>
             </nav>
-              <Switch>
+              <Switch className="app-con">
                 <Route  path='/projects' component={projects}/>
                 <Route exact path='/' component={profile}/>
                 <Route path='/contact' component={contact}></Route>
