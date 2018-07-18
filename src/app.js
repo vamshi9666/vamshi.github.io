@@ -76,17 +76,17 @@ class App extends Component{
     // }
     render(){
         return(
-            <div className="">
+            <div className="whole-con">
               <nav className="navbar nav-container navbar-inverse">
                 <div className="links-con">
-                  <Link  to='/'>
-                    <button className="cus-btn">Profile</button>
+                  <Link className="link"  to='/'>
+                    <button className=" btn btn-primary cus-btn ">Profile</button>
                   </Link>
-                  <Link  to='/projects'>
-                    <button className="cus-btn">Projects</button>
+                  <Link className="link" to='/projects'>
+                    <button className="btn  cus-btn">Projects</button>
                   </Link>{this.props.logo}
-                  <Link className="cus-btn" to='/contact'>
-                    <button className=" cus-btn">Hire me</button>
+                  <Link className="link" to='/contact'>
+                    <button className="btn  cus-btn">Hire me</button>
                   </Link>
               </div>
             </nav>

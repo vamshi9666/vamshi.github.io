@@ -10,7 +10,7 @@
   flex: 0.5;
   width:90vh;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-between;
   flex-direction: row;
 }
 .project{
@@ -27,7 +27,8 @@
 .disc-con{
 }
 .link{
-  flex:1;
+  margin-left: 10vh;
+  margin-right: 10vh
 }
 .nav-container{
   display: flex;
@@ -38,6 +39,7 @@
   width: 100px;
   height: 40px;
   white-space: nowrap;
+
 }
 .app-con{
   display: flex;
