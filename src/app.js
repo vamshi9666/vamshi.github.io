@@ -16,9 +16,11 @@ const profile = ()=>(
     </div>
   </div>
   <div className="head2">
-    <p className="tag-line"> I used to say JavaSCript everywhere.</p>
-    <p className="tag-line">And now i am saying Rust everywhere </p>
-  </div>
+    <div className="bio-con">
+      <p className="tag-line"> I used to say JavaSCript everywhere.</p>
+      <p className="tag-line">And now i am saying Rust everywhere </p>
+    </div>
+      </div>
 </div>
 );
 
