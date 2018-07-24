@@ -80,7 +80,7 @@ class App extends Component{
               <nav className="navbar nav-container navbar-inverse">
                 <div className="links-con">
                   <Link className="link"  to='/'>
-                    <button className=" btn btn-primary cus-btn ">Profile</button>
+                    <button className=" btn  cus-btn ">Profile</button>
                   </Link>
                   <Link className="link" to='/projects'>
                     <button className="btn  cus-btn">Projects</button>
