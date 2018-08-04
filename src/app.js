@@ -87,7 +87,7 @@ class App extends Component{
                   <Link className="link" to='/contact'>
                     <button className="btn  cus-btn">Hire me</button>
                   </Link>
-                  <Link className="link" to="/Blogs">
+                  <Link className="link" to="/blogs">
                       <button className="btn cus-btn">Blogs</button>
                   </Link>
               </div>
@@ -96,6 +96,7 @@ class App extends Component{
                 <Route  path='/projects' component={projects}/>
                 <Route exact path='/' component={profile}/>
                 <Route path='/contact' component={contact}></Route>
+                <Route path='/blogs' component={contact}></Route>
               </Switch>
 
             </div>
