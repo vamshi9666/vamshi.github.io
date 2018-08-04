@@ -19,7 +19,8 @@
   width: 250px
 }
 .each-pro{
-  padding-top: 30px
+  padding-top: 30px;
+  display: flex;
 }
 .project-head{
   max-height: 100%
@@ -34,6 +35,11 @@
   display: flex;
   justify-content: center;
 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .cus-btn{
   width: 100px;
@@ -89,12 +95,13 @@
 .whole-con{
     display: flex;
     flex-direction: column;
-     margin-right: 5%;
-     margin-left: 5%;
+     margin-right: 3%;
+     margin-left: 3%;
      align-items: center;
      font-family: 'IBM Plex Mono', monospace;
      max-height:  90vh;
      overflow: auto;
+     max-width: 100;
      text-align: center;
 }
 

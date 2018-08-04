@@ -52,9 +52,9 @@ class projects extends Component {
         {
           this.state.data.map(project=>{
             return (
-              <li className="each-pro">
-                <Project name={project.name}></Project>
-              </li>
+                <li className="each-pro">
+                  <Project name={project.name}></Project>
+                </li>
             );
           })
         }
@@ -70,7 +70,6 @@ class App extends Component{
         loading : false
       }
     }
-
     // componentWillMount(){
     //
     // }
@@ -87,6 +86,9 @@ class App extends Component{
                   </Link>{this.props.logo}
                   <Link className="link" to='/contact'>
                     <button className="btn  cus-btn">Hire me</button>
+                  </Link>
+                  <Link className="link" to="/Blogs">
+                      <button className="btn cus-btn">Blogs</button>
                   </Link>
               </div>
             </nav>
