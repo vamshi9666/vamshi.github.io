@@ -100,8 +100,8 @@
 .whole-con{
     display: flex;
     flex-direction: column;
-     margin-right: 3%;
-     margin-left: 3%;
+     margin-right: 0;
+     margin-left: 0;
      align-items: center;
      font-family: 'IBM Plex Mono', monospace;
      max-height:  90vh;
