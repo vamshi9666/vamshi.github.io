@@ -9,7 +9,8 @@
     "start": "webpack-dev-server --mode development  --hot",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -b master -d dist",
+    "postdeploy":"git add . && git commit -m 'deployment' && git push origin source "
   },
   "repository": {
     "type": "git",
