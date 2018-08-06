@@ -36,6 +36,11 @@
   justify-content: center;
 
 }
+.footer{
+  background-color: #e3d3ff;
+  display: grid;
+  width: 100%;
+}
 .container{
   display: flex;
   justify-content: center;

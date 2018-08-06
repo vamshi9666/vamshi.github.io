@@ -98,7 +98,11 @@ class App extends Component{
                 <Route path='/contact' component={contact}></Route>
                 <Route path='/blogs' component={contact}></Route>
               </Switch>
-
+              <footer className="footer">
+                <div >
+                  Designed and Developed by Vamshi
+                </div>
+              </footer>
             </div>
           );
     }
