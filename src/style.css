@@ -20,7 +20,12 @@
 }
 .each-pro{
   padding-top: 30px;
+
   display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-around;
 }
 .project-head{
   max-height: 100%
