@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d dist",
-    "postdeploy":"git add . && git commit -m 'deployment' && git push origin source "
+    "postdeploy": "git add . && git commit -m 'deployment' && git push origin source "
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "url": "https://github.com/vamshi9666/vamshi9666.github.io/issues"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.2.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
@@ -29,10 +30,11 @@
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-spinner": "^0.2.7",
     "style-loader": "^0.21.0",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.7",

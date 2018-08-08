@@ -1,6 +1,7 @@
 import React , {Component }from 'react';
 import http from 'http'
 import { Route, Switch, Link } from 'react-router-dom'
+import {Spinner} from '@blueprintjs/core'
 import './style.css'
 
 //components
@@ -27,26 +28,33 @@ const profile = ()=>(
 const contact = ()=>(
   <div className="whole">
     <h5> This part of website will be updated soon with meaning-full content</h5>
-
   </div>
 )
 class projects extends Component {
   constructor(){
     super();
     this.state = {
-      data:[]
+      data:[],
+      loading:true
     }
-    this.componentWillMount = this.componentWillMount.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
-  componentWillMount(){ fetch('https://api.github.com/users/vamshi9666/repos')
+  componentDidMount(){ fetch('https://api.github.com/users/vamshi9666/repos')
       .then(response =>response.json())
       .then(jsonResponse=>{
          console.log(jsonResponse)
-       this.setState({data:jsonResponse})
+         this.setState({data:jsonResponse})
+         this.setState({loading:!this.state.loading})
         }
       )
-      .catch(err=>{ console.log(err); }) }
+      .catch(err=>{ console.log(err) })
+    }
   render(){
+    if(this.state.loading){
+      return (
+        <img src="../assets/loading.gif" alt="loading"/>
+      )
+    }
     return (
       <ol className="projects-con">
         {
