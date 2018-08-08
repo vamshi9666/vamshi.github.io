@@ -1,7 +1,6 @@
 import React , {Component }from 'react';
 import http from 'http'
 import { Route, Switch, Link } from 'react-router-dom'
-import {Spinner} from '@blueprintjs/core'
 import './style.css'
 
 //components
@@ -47,7 +46,9 @@ class projects extends Component {
          this.setState({loading:!this.state.loading})
         }
       )
-      .catch(err=>{ console.log(err) })
+      .catch(err=>{
+        console.log(err)
+       })
     }
   render(){
     if(this.state.loading){
