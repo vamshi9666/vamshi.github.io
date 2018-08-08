@@ -52,7 +52,7 @@ class projects extends Component {
   render(){
     if(this.state.loading){
       return (
-        <img src="../assets/loading.gif" alt="loading"/>
+        <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="loading..."/>
       )
     }
     return (
