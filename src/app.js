@@ -5,6 +5,7 @@ import './style.css'
 
 //components
 import Project from './components/project'
+import Blog from './components/blog-post/blog-post'
 const profile = ()=>(
   <div className="whole">
   <div className="head1">
@@ -17,7 +18,7 @@ const profile = ()=>(
   </div>
   <div className="head2">
     <div className="bio-con">
-      <p className="tag-line"> I used to say JavaSCript everywhere.</p>
+      <p className="tag-line"> I used to say JavaScript everywhere.</p>
       <p className="tag-line">And now i am saying Rust everywhere </p>
     </div>
       </div>
@@ -27,6 +28,12 @@ const profile = ()=>(
 const contact = ()=>(
   <div className="whole">
     <h5> This part of website will be updated soon with meaning-full content</h5>
+  </div>
+)
+
+const Blogs = () => (
+  <div className="">
+    <Blog/>
   </div>
 )
 class projects extends Component {
@@ -105,7 +112,7 @@ class App extends Component{
                 <Route  path='/projects' component={projects}/>
                 <Route exact path='/' component={profile}/>
                 <Route path='/contact' component={contact}></Route>
-                <Route path='/blogs' component={contact}></Route>
+                <Route path='/blogs' component={Blogs}></Route>
               </Switch>
               <footer className="footer">
                 <div >

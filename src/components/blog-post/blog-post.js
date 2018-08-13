@@ -7,14 +7,17 @@ class BlogPost extends Component {
     super(props)
   }
   componentWillMount(){
-    
+
   }
   componentDidMount(){
 
   }
   render(){
     return(
-
+      <div className="">
+        My blogs come here
+      </div>
     );
   }
-}
+};
+export default BlogPost
