@@ -22,7 +22,7 @@
     "url": "https://github.com/vamshi9666/vamshi9666.github.io/issues"
   },
   "dependencies": {
-    "@blueprintjs/core": "^3.2.0",
+    "@blueprintjs/core": "^3.4.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
@@ -39,7 +39,7 @@
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
-    "yargs": "^12.0.0"
+    "yargs": "^12.0.1"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"
