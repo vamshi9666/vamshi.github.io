@@ -38,7 +38,8 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.6"
+    "webpack-dev-server": "^3.1.5",
+    "yargs": "^12.0.0"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"
