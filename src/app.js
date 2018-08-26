@@ -69,7 +69,7 @@ class projects extends Component {
           this.state.data.map(project=>{
             return (
                 <li className="each-pro">
-                  <Project name={project.name}></Project>
+                  <Project name={project.name} gitUrl={project.html_url}></Project>
                 </li>
             );
           })

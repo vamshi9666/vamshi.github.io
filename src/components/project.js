@@ -18,6 +18,13 @@ class Project extends Component {
         <div className="disc-con">
           <p>{this.props.discription}</p>
         </div>
+        <div className="links">
+          <a href={this.props.gitUrl}>
+            <button className="btn">
+              <img className="git-icon" src="https://www.shareicon.net/data/2017/03/07/880593_media_512x512.png" alt="repo link"/>
+            </button>
+          </a>
+        </div>
       </div>
     );
   }
