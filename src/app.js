@@ -48,9 +48,9 @@ class projects extends Component {
   componentDidMount(){ fetch('https://api.github.com/users/vamshi9666/repos')
       .then(response =>response.json())
       .then(jsonResponse=>{
-         console.log(jsonResponse)
          this.setState({data:jsonResponse})
          this.setState({loading:!this.state.loading})
+         console.log(this.state);
         }
       )
       .catch(err=>{
@@ -68,8 +68,8 @@ class projects extends Component {
         {
           this.state.data.map(project=>{
             return (
-                <li className="each-pro">
-                  <Project name={project.name} gitUrl={project.html_url}></Project>
+                <li key={project.id} className="each-pro">
+                  <Project key={project.id} name={project.name} gitUrl={project.html_url}></Project>
                 </li>
             );
           })
