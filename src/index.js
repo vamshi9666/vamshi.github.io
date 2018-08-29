@@ -9,17 +9,16 @@ ReactDOM.render(
   </HashRouter>
   ,document.getElementById('app'))
 console.log("service Worker ");
-// if('serviceWorker' in navigator){
-console.log('test for url ');
-//   window.addEventListener('load',()=>{
-//     navigator.serviceWorker
-//       .register('./sw.js')
-//       .then(response=>{
-//         console.log("Service Worker : registered");
-//       })
-//       .catch(err=>{
-//         console.log(`Service Worker err: ${err}`);
-//       })
-//   })
-//
-// }
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker
+      .register('./sw.js')
+      .then(response=>{
+        console.log("Service Worker : registered");
+      })
+      .catch(err=>{
+        console.log(`Service Worker err: ${err}`);
+      })
+  })
+
+}
