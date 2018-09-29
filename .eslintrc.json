@@ -1,4 +1,4 @@
-module.exports = {
+{
     "env": {
         "browser": true,
         "commonjs": true,
@@ -18,7 +18,7 @@ module.exports = {
     "rules": {
         "indent": [
             "error",
-            4
+            "tab"
         ],
         "linebreak-style": [
             "error",
@@ -33,4 +33,4 @@ module.exports = {
             "always"
         ]
     }
-};
+}

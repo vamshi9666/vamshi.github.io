@@ -40,9 +40,9 @@ class projects extends Component {
   constructor(){
     super();
     this.state = {
-      data:[],
+	   
       loading:true
-    }
+    };
     this.componentDidMount = this.componentDidMount.bind(this);
   }
   componentDidMount(){ fetch('https://api.github.com/users/vamshi9666/repos')
