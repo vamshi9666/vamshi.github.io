@@ -1,13 +1,13 @@
-FROM NOde:alpine
+FROM node:alpine
 
-WORKDIR  ./
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY . .
-
-COPY package*.json ./
+COPY . /usr/src/app
 
 RUN npm install
 
-EXPOSE 8080
+COPY . .
 
-CMD ["npm", "start"]
+EXPOSE 8080
+CMD [ "npm", "start" ]

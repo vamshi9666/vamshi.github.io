@@ -4,7 +4,7 @@ import App from './app';
 import { HashRouter } from 'react-router-dom'
 
 ReactDOM.render(
-      
+
   <HashRouter>
     <App className="ent"/>
   </HashRouter>

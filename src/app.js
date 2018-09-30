@@ -5,7 +5,7 @@ import {Route, Switch, Link} from 'react-router-dom';
 import './style.css';
 /* eslint-disable */
 //components
-const hell = {};
+//const hell = {};
 import Project from './components/project';
 import Blog from './components/blog-post/blog-post';
 const profile = () => (
@@ -134,5 +134,7 @@ class App extends Component {
     );
   }
 }
+
+//const hell = 'hell'
 
 export default App;
