@@ -128,7 +128,7 @@ class App extends Component {
           <Route path="/blogs" component={Blogs} />
         </Switch>
         <footer className="footer">
-          <div>Designed and Developed by Vamshi</div>
+          <div class="foot-component">Designed and Developed by Vamshi</div>
         </footer>
       </div>
     );
