@@ -37,6 +37,7 @@
 .project-head{
   max-height: 100%
 }
+
 .disc-con{
 }
 .link{
@@ -110,6 +111,9 @@
   width: 15%;
   height: 20%
 }
+.toggle {
+  display: none;
+}
 .whole-con{
     display: flex;
     flex-direction: column;
@@ -141,4 +145,35 @@
 }
 .head2{
   flex: 1
+}
+
+@media (max-width: 756px){
+   .links-con{
+    display: none;
+  }
+  .toggle{
+    display:inline-flex;
+    flex:1;
+  }
+  .nav-container{
+    display: flex;
+    flex-direction:column;
+    width: 95%;
+    padding-top: 20px;
+  }
+  .bio-con {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsive-nav{
+    display: flex;
+    flex-direction: column;
+    }
+  .link{
+    padding: 10px;
+  }
+  .con-toggle{
+    width: 100% ;
+    display: flex ;
+  }
 }

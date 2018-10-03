@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import http from 'http';
 import {Route, Switch, Link} from 'react-router-dom';
+import $ from 'jquery';
 import './style.css';
 /* eslint-disable */
 //components
@@ -96,15 +97,28 @@ class App extends Component {
     super(props);
     this.state = {
       loading: false,
+      navResponsive: false
     };
   }
-  // componentWillMount(){
-  //
-  // }
+  componentDidMount(){
+     console.log(`Component Did MOunt`);
+     $('.toggle').on('click', ()=> {
+       console.log(`log from jquery`);
+       $('.links-con').toggleClass('responsive-nav')
+     })
+
+  }
   render() {
     return (
       <div className="whole-con">
         <nav className="navbar nav-container navbar-inverse">
+          <div className="con-toggle">
+            <div className="toggle">
+              <button id="nav" className="btn">
+                 <i className="fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
           <div className="links-con">
             <Link className="link" to="/">
               <button className=" btn  cus-btn ">Profile</button>
@@ -112,7 +126,6 @@ class App extends Component {
             <Link className="link" to="/projects">
               <button className="btn  cus-btn">Projects</button>
             </Link>
-            {this.props.logo}
             <Link className="link" to="/contact">
               <button className="btn  cus-btn">Hire me</button>
             </Link>
@@ -130,6 +143,7 @@ class App extends Component {
         <footer className="footer">
           <div class="foot-component">Designed and Developed by Vamshi</div>
         </footer>
+
       </div>
     );
   }
