@@ -2,7 +2,6 @@
 import React, {Component} from 'react';
 import http from 'http';
 import {Route, Switch, Link} from 'react-router-dom';
-import $ from 'jquery';
 import './style.css';
 /* eslint-disable */
 //components
