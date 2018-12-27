@@ -99,14 +99,6 @@ class App extends Component {
       navResponsive: false
     };
   }
-  componentDidMount(){
-     console.log(`Component Did MOunt`);
-     $('.toggle').on('click', ()=> {
-       console.log(`log from jquery`);
-       $('.links-con').toggleClass('responsive-nav')
-     })
-
-  }
   render() {
     return (
       <div className="whole-con">
