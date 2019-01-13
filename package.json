@@ -4,7 +4,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp js && gulp html && gulp css",
+    "build": "gulp ",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/vamshi9666/vamshi9666.github.io/issues"
   },
-  "homepage": "https://github.com/vamshi9666/vamshi9666.github.io",
+  "homepage": "https://vamshi9666.github.io",
   "description": "",
   "dependencies": {
     "del": "^3.0.0",
