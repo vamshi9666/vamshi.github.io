@@ -19,7 +19,6 @@ gulp.task('js', function() {
     // Output
     .pipe(gulp.dest('./dist/'))
 });
-
 gulp.task('html', function() {
   return gulp.src(['./*.html'])
     .pipe(htmlmin({
@@ -28,3 +27,8 @@ gulp.task('html', function() {
     }))
     .pipe(gulp.dest('./dist'));
 });
+
+gulp.task('build', ['html','css','js'])
+
+
+gulp.task('default', gulp.series('build'))
