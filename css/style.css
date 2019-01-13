@@ -48,20 +48,20 @@ body {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background: url(../assets/bg.jpg) no-repeat center center fixed;
+    background: url(../assets/bg.webp) no-repeat center center fixed;
     min-height: 100%; 
     background-size: cover;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url(../assets/bg2.jpg);
+    background-image: url(../assets/bg2.webp);
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url(../assets/bg3.jpg);
+    background-image: url(../assets/bg3.webp);
     min-height: 400px;
 }
 
