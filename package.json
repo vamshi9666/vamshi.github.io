@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/vamshi9666/vamshi9666.github.io/issues"
   },
-  "homepage": "https://vamshi9666.github.io",
   "description": "",
   "dependencies": {
     "del": "^3.0.0",
